@@ -1,3 +1,14 @@
+
+
+git remote add dokku dokku@dokku.arm1.localhost3002.live:node-app
+
+docker exec -it dokku bash dokku apps:create node-app
+
+git push dokku main:main
+
+
+
+
 # dokku-node-hello-world
 
 > An instruction on how to deploy a node app to a server that is running [dokku](http://dokku.viewdocs.io/dokku/).
