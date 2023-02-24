@@ -1,12 +1,16 @@
 
+### Add remote, create app and push
 
+```bash
 git remote add dokku dokku@dokku.arm1.localhost3002.live:node-app
 
 docker exec -it dokku bash dokku apps:create node-app
 
 git push dokku main:main
+```
 
-
+---
+---
 
 
 # dokku-node-hello-world
